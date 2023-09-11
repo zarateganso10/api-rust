@@ -1,0 +1,25 @@
+GET http://localhost:3000/
+###
+GET http://localhost:8000/api/users
+###
+GET http://localhost:3000/users/d72e93df-8a39-43cd-a465-de9d99ef98d5
+###
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "name": "Matheus Viera",
+    "email": "matheus_zarate@hotmail.com",
+    "password": "1234"
+}
+###
+PATCH http://localhost:3000/users/c4687e32-076a-4374-9e5d-f1287f55ac0e
+Content-Type: application/json
+
+{
+    "name": "Matheus Viera Zarate sdasds",
+    "email": "matheus_zarate55@hotmail.com"
+}
+
+###
+DELETE http://localhost:3000/users/d72e93df-8a39-43cd-a465-de9d99ef98da
