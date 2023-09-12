@@ -1,9 +1,8 @@
 mod routes;
 mod models;
 
-use actix_cors::Cors;
 use actix_web::middleware::Logger;
-use actix_web::{http::header, web, App, HttpServer};
+use actix_web::{web, App, HttpServer};
 use dotenv::dotenv;
 use sqlx::postgres::{PgPoolOptions, PgPool};
 
