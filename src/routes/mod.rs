@@ -78,7 +78,7 @@ async fn create_user(
 }
 
 
-#[get("/api/healthchecker")]
+#[get("/healthchecker")]
 async fn health_checker_handler() -> impl Responder {
     const MESSAGE: &str = "Build Simple CRUD API with Rust, SQLX, MySQL, and Actix Web";
 
